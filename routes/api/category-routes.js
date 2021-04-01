@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
   // find all categories
   // be sure to include its associated Products
   try {
-    const categoryData = await Category.findAll{include: [Product]};
+    const categoryData = await Category.findAll({include: [Product]});
     res.json(categoryData)
   }
   catch (err) {
@@ -21,7 +21,7 @@ router.get('/:id', (req, res) => {
   // be sure to include its associated Products
   try {
     const category = await Category.findByPk(req.params.id, {include: [Product]});
-      res.json(categroy)
+      res.json(category)
   }
   catch (err) {
     console.log(err.message)
