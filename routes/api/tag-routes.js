@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data 
   try {
-    const tag =  await Tag.findByPk({
+    const tag =  await Tag.findByPk(req.params.id, {
       include: [Product]
     })
       res.json(tag)
