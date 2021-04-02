@@ -63,6 +63,7 @@ This application will help track products through tags and categories.
 
 ## Video
 https://youtu.be/RWAmSjnDJ5Y
+![Screen Shot 2021-04-02 at 2 44 21 PM](https://user-images.githubusercontent.com/78819536/113456406-175f6b80-93c2-11eb-82ab-47d83629c188.png)
 
 ## Questions
 ​
